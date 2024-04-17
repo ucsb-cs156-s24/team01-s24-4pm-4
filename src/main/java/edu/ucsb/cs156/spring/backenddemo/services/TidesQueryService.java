@@ -34,14 +34,14 @@ public class TidesQueryService {
     public static final String ENDPOINT = "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?application=ucsb-cs156&begin_date={beginDate}&end_date={endDate}&station={station}&product=predictions&datum=mllw&units=english&time_zone=lst_ldt&interval=hilo&format=json";
 
     public String getJSON(String beginDate, String endDate, String station) throws HttpClientErrorException {
-        log.info("beginDate={}, endDate={}", beginDate, endDate);
+        log.info("beginDate={}, endDate={}, station={}", beginDate, endDate, station);
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(List.of(MediaType.APPLICATION_JSON));
         headers.setContentType(MediaType.APPLICATION_JSON);
 
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
-        Map<String, String> uriVariables = Map.of("beginDate", beginDate, "endDate", endDate);
+        Map<String, String> uriVariables = Map.of("beginDate", beginDate, "endDate", endDate, "station", station);
 
         ResponseEntity<String> re = restTemplate.exchange(ENDPOINT, HttpMethod.GET, entity, String.class,
                 uriVariables);
