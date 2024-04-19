@@ -31,7 +31,7 @@ public class TidesController {
 
     @Operation(summary = "Get tides", description = "JSON return format documented here: https://api.tidesandcurrents.noaa.gov/api/prod/#DataAPIResponse")
     @GetMapping("/get")
-    public ResponseEntity<String> getEarthquakes(
+    public ResponseEntity<String> getTides(
         @Parameter(name="beginDate", description="begin date", example="20030101") @RequestParam String beginDate,
         @Parameter(name="endDate", description="end date", example="20040412") @RequestParam String endDate,
         @Parameter(name="station", description="station id", example="9414290") @RequestParam String station
