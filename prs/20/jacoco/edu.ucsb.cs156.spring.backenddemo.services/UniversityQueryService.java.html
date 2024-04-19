@@ -32,18 +32,18 @@ public class UniversityQueryService {
     public static final String ENDPOINT = &quot;http://universities.hipolabs.com/search?name={name}&quot;;
 
     public String getJSON(String name) throws HttpClientErrorException {
-<span class="nc" id="L35">        log.info(&quot;name={}&quot;, name);</span>
-<span class="nc" id="L36">        HttpHeaders headers = new HttpHeaders();</span>
-<span class="nc" id="L37">        headers.setAccept(List.of(MediaType.APPLICATION_JSON));</span>
-<span class="nc" id="L38">        headers.setContentType(MediaType.APPLICATION_JSON);</span>
+<span class="fc" id="L35">        log.info(&quot;name={}&quot;, name);</span>
+<span class="fc" id="L36">        HttpHeaders headers = new HttpHeaders();</span>
+<span class="fc" id="L37">        headers.setAccept(List.of(MediaType.APPLICATION_JSON));</span>
+<span class="fc" id="L38">        headers.setContentType(MediaType.APPLICATION_JSON);</span>
 
-<span class="nc" id="L40">        HttpEntity&lt;String&gt; entity = new HttpEntity&lt;&gt;(headers);</span>
+<span class="fc" id="L40">        HttpEntity&lt;String&gt; entity = new HttpEntity&lt;&gt;(headers);</span>
 
-<span class="nc" id="L42">        Map&lt;String, String&gt; uriVariables = Map.of(&quot;name&quot;, name);</span>
+<span class="fc" id="L42">        Map&lt;String, String&gt; uriVariables = Map.of(&quot;name&quot;, name);</span>
 
-<span class="nc" id="L44">        ResponseEntity&lt;String&gt; re = restTemplate.exchange(ENDPOINT, HttpMethod.GET, entity, String.class,</span>
+<span class="fc" id="L44">        ResponseEntity&lt;String&gt; re = restTemplate.exchange(ENDPOINT, HttpMethod.GET, entity, String.class,</span>
                 uriVariables);
-<span class="nc" id="L46">        return re.getBody();</span>
+<span class="fc" id="L46">        return re.getBody();</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
