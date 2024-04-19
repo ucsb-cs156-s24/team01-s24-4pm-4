@@ -39,6 +39,7 @@ public class PublicHolidayQueryService {
         log.info("year={}, countryCode={}", year, countryCode);
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(List.of(MediaType.APPLICATION_JSON));
+        headers.setContentType(MediaType.APPLICATION_JSON);
 
         HttpEntity<String> entity = new HttpEntity<>(headers);
         Map<String, String> uriVariables = Map.of("year", year, "countryCode", countryCode);
