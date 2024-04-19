@@ -31,7 +31,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 
     @Operation(summary = &quot;Get tides&quot;, description = &quot;JSON return format documented here: https://api.tidesandcurrents.noaa.gov/api/prod/#DataAPIResponse&quot;)
     @GetMapping(&quot;/get&quot;)
-    public ResponseEntity&lt;String&gt; getEarthquakes(
+    public ResponseEntity&lt;String&gt; getTides(
         @Parameter(name=&quot;beginDate&quot;, description=&quot;begin date&quot;, example=&quot;20030101&quot;) @RequestParam String beginDate,
         @Parameter(name=&quot;endDate&quot;, description=&quot;end date&quot;, example=&quot;20040412&quot;) @RequestParam String endDate,
         @Parameter(name=&quot;station&quot;, description=&quot;station id&quot;, example=&quot;9414290&quot;) @RequestParam String station
