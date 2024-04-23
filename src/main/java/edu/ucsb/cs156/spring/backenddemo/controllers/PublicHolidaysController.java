@@ -21,7 +21,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 @Tag(name="Public Holiday Info from https://date.nager.at/Api")
 @Slf4j
 @RestController
-@RequestMapping("/api/publicholidays/get")
+@RequestMapping("/api/publicholidays")
 public class PublicHolidaysController {
 
     ObjectMapper mapper = new ObjectMapper();
