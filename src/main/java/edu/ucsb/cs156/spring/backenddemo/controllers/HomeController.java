@@ -45,8 +45,8 @@ public class HomeController {
         List<String> team = new ArrayList<String>();
         team.add("Andrew C.");
         team.add("Emre C.");
-        team.add("Anderson L.");
         team.add("Ridhit G.");
+        team.add("Anderson L.");
         team.add("Jaren L.");
         team.add("Winbert Z.");
         resultMap.put("team", team);
