@@ -46,8 +46,8 @@ public class HomeController {
         team.add("Andrew C.");
         team.add("Emre C.");
         team.add("Anderson L.");
-        team.add("Jaren L.");
         team.add("Ridhit G.");
+        team.add("Jaren L.");
         team.add("Winbert Z.");
         resultMap.put("team", team);
         resultMap.put("repo", "https://github.com/ucsb-cs156-s24/team01-s24-4pm-4");
