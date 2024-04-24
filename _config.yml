@@ -23,4 +23,4 @@ repo_name: "TBD"
 repo: ucsb-cs156-s24/team01-s24-4pm-4
 owner: ucsb-cs156-s24
 repo_name: team01-s24-4pm-4
-pull_requests: [{"author":{"id":"MDQ6VXNlcjQ2MDk1NTAw","is_bot":false,"login":"tihdiR","name":""},"headRefName":"Ridhit-HomeController2","number":30,"title":"Customized home controller","url":"https://github.com/ucsb-cs156-s24/team01-s24-4pm-4/pull/30"},{"author":{"id":"MDQ6VXNlcjMyNDAyOTk3","is_bot":false,"login":"andrew344c","name":"Andrew"},"headRefName":"Andrew-READMEFixes","number":29,"title":"Adjust links in README.md","url":"https://github.com/ucsb-cs156-s24/team01-s24-4pm-4/pull/29"}]
+pull_requests: [{"author":{"id":"MDQ6VXNlcjQ2MDk1NTAw","is_bot":false,"login":"tihdiR","name":""},"headRefName":"Ridhit-HomeController2","number":30,"title":"Customized home controller","url":"https://github.com/ucsb-cs156-s24/team01-s24-4pm-4/pull/30"}]
